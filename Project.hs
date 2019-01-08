@@ -57,9 +57,6 @@ firstMatches (a :|: b) = firstMatches a ++ firstMatches b ++ firstMatches Empty
 firstMatches (Rep a) = firstMatches a
 firstMatches (Rep1 a) = firstMatches a 
 
-
-
-
 {-
     Given a regular expression r, return a list of all symbols that occur first
     in some string in the language described by r. You are not required to
@@ -73,19 +70,4 @@ firstMatches (Rep1 a) = firstMatches a
     firstMatch (Rep (Sym 'a' :|: Sym 'b')) = ['a', 'b']
     firstMatch (Sym 1 :+: Sym 2) = [1]
     firstMatch ((Sym 1 :|: Empty) :+: Sym 2) = [1,2]
-
-
-
-
-
-
-
-
 -}
-
-
-
-
-
-
-
