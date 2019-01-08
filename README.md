@@ -38,5 +38,3 @@ data RE a            -- regular expressions over an alphabet defined by 'a'
     firstMatches (Rep (Sym 'a' :|: Sym 'b')) = ['a', 'b']
     firstMatches (Sym 1 :+: Sym 2) = [1]
     firstMatches ((Sym 1 :|: Empty) :+: Sym 2) = [1,2]
-
-# Haskell-regular-expression
